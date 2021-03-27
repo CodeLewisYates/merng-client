@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { Card, Icon, Button, Image, Label, Popup } from "semantic-ui-react";
+import { Card, Icon, Button, Image, Label } from "semantic-ui-react";
 import moment from "moment";
 import { Link } from "react-router-dom";
 
@@ -12,10 +12,6 @@ const PostCard = ({
   post: { body, createdAt, id, username, likeCount, commentCount, likes },
 }) => {
   const { user } = useContext(AuthContext);
-
-  function commentOnPost() {
-    console.log("comment on post");
-  }
 
   return (
     <Card fluid>
